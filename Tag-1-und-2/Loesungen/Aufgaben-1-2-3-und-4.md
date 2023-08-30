@@ -10,6 +10,7 @@
 `"Franz"` ist eine Zeichenkette (`str`), da Gänsefüßchen rechts und links davon gesetzt sind.
 
 `franz` kann der Name einer Variablen sein, vorrausgesetzt es gab an einer bereits ausgeführten Stelle des Programms eine Zeile wie
+
         franz = 3
 
 ## Aufgabe 3
