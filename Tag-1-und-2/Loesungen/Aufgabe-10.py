@@ -8,7 +8,7 @@ while n < 20:
     #berechne uebernächste Fibonaccizahl
     uebernaechste = aktuelle + naechste
     
-    #aktualisiere die Variablen (Reihenfolge wichtg)
+    #aktualisiere die Variablen (Reihenfolge wichtig)
     aktuelle = naechste
     naechste = uebernaechste
     n += 1

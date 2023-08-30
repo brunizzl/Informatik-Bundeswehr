@@ -1,4 +1,5 @@
-# Vorkurs Bauing Informatik
+# Vorkurs BauIng Informatik
+Dateien zum Kurs
 
 ## Seiten
 - python Online Interpreter: https://www.programiz.com/python-programming/online-compiler/
@@ -6,7 +7,7 @@
 - offizielle python Seite: https://www.python.org/
 
 ## Inhalte
-Die Datei `Syntax.pdf` gibt eine knappe Übersicht über die bis jetzt eingeführten Ideen.
+Die Datei `PythonSyntax.pdf` gibt eine knappe Übersicht über die bis jetzt eingeführten Ideen.
 
 Behandelt wurde bisher:
 - Tag-1-und-2: 
@@ -15,4 +16,5 @@ Behandelt wurde bisher:
     + Schleifen
 - Tag-3:
     + GEHEIM
-- Tag
+- Tag-4:
+    + GEHEIM
