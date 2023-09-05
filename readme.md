@@ -16,6 +16,7 @@ Behandelt wurde bisher:
     + if-Bedingungen
     + Schleifen
 - Tag-3:
-    + GEHEIM
+    + Funktionen
+    + Listen
 - Tag-4:
-    + GEHEIM
+    + ???
