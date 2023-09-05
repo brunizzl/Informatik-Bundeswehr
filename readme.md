@@ -3,6 +3,7 @@ Dateien zum Kurs
 
 ## Seiten
 - python Online Interpreter: https://www.programiz.com/python-programming/online-compiler/
+- python Code Schritt für Schritt ausführen: https://pythontutor.com/render.html#mode=display
 - sehr ähnlicher Kurs in Buchform (kostenlos): https://automatetheboringstuff.com/
 - offizielle python Seite: https://www.python.org/
 

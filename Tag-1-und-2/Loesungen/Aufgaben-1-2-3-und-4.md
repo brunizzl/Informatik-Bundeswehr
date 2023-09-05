@@ -14,7 +14,8 @@
         franz = 3
 
 ## Aufgabe 3
-Zur Lösung kann jeder Ausdruck im Taschenrechnermodus in Python eingegeben werden. Will man den Typ direkt haben muss man `type(` Ausdruck `)` schreiben, e.g. `type(3 + 4)`.
+Zur Lösung kann jeder Ausdruck im Taschenrechnermodus in Python eingegeben werden. Will man den Typ direkt haben muss man 
+`type(` Ausdruck `)` schreiben, e.g. `type(3 + 4)`.
 - `0` ist vom Typ `int`
 - `0.0` ist vom Typ `float`
 - `"0"` ist vom Typ `str`
