@@ -17,6 +17,13 @@ Behandelt wurde bisher:
     + Schleifen
 - Tag-3:
     + Funktionen
-    + Listen
 - Tag-4:
-    + ???
+    + Listen
+    
+## Nützliche Befehle
+- `python` startet python im Taschenrechnermodus
+- `python -i datei-name.py` startet python im Taschenrechnermodus und kennt dann die Dinge in `datei-name.py`
+- `python datei-name.py` führt die Datei `datei-name.py` aus
+- `g++ -o programm-name datei-name.cpp` kompiliert das Programm in `datei-name.cpp` und speichert das Ergebnis als `programm-name.exe`
+- `.\programm-name` führt das Programm `programm-name.exe` aus
+
