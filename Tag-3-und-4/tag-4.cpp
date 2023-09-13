@@ -24,8 +24,7 @@ std::string poly_zu_str(std::vector<float> const& poly) {
     while (i < laenge) {
         float koeff = poly[i];
         ergebnis += float_zu_str(koeff);
-        ergebnis += " x^";
-        ergebnis += std::to_string(i);
+        ergebnis += " x^" + std::to_string(i);
         i += 1;
     }
     return ergebnis;
