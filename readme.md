@@ -7,19 +7,6 @@ Dateien zum Kurs
 - sehr ähnlicher Kurs in Buchform (kostenlos): https://automatetheboringstuff.com/
 - offizielle python Seite: https://www.python.org/
 - Online Compiler für sehr viele Sprachen (auch python und c++): https://godbolt.org/
-
-## Inhalte
-Die Datei `PythonSyntax.pdf` gibt eine knappe Übersicht über die bis jetzt eingeführten Ideen.
-
-Behandelt wurde bisher:
-- Tag-1-und-2: 
-    + Logikvariablen
-    + if-Bedingungen
-    + Schleifen
-- Tag-3:
-    + Funktionen
-- Tag-4:
-    + Listen
     
 ## Nützliche Befehle
 - `python` startet python im Taschenrechnermodus
