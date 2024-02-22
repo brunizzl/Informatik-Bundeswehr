@@ -44,6 +44,7 @@ Die in den Aufgaben vorkommenden Funktionen haben diese Abbildungsforschriften:
 `f(1 - 2) + 3`
 
 Lösung:
+
 `f(1 - 2) + 3`
 
 `f(-1) + 3`
@@ -61,6 +62,7 @@ Lösung:
 `h(h(h(-6)))`
 
 Lösung:
+
 `h(h(h(-6)))`
 
 `h(h(1 - (-6) / 3))`
@@ -87,6 +89,7 @@ Lösung:
 `f(3 - g(4) * h(0))`
 
 Lösung:
+
 `f(3 - g(4) * h(0))`
 
 `f(3 - (2 * 4 * 4) * h(0))`
@@ -195,7 +198,7 @@ e
 ## Aufgabe 5
 `f(1 - 2) + 3`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = 1 - 2
 b = f(a)
@@ -207,7 +210,7 @@ c
 ## Aufgabe 6
 `h(h(h(-6)))`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = h(-6)
 b = h(a)
@@ -220,7 +223,7 @@ c
 ## Aufgabe 7
 `f(3 - g(4) * h(0))`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = g(4)
 b = h(0)
@@ -234,7 +237,7 @@ e
 ## Aufgabe 8
 `1 + g(2 + 3 + 4) + 5 + h(6)`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a1 = 2 + 3
 a2 = a1 + 4
@@ -260,7 +263,7 @@ Fällt ihnen ein Unterschied hinsichtlich der benötigten Rechenschitte auf?
 ## Aufgabe 10
 `f(x - 2) + 3`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a1 = x - 2
 a2 = f(a1)
@@ -272,7 +275,7 @@ a3
 ## Aufgabe 11
 `h(h(h(x)))`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = h(x)
 b = h(a)
@@ -284,7 +287,7 @@ c
 ## Aufgabe 12
 `f(x - y) * h(x)`
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = x - y
 b = f(a)
@@ -351,7 +354,7 @@ fun(x):
     f(x - 2) + 3
 ```
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 fun(x):
     a = x - 2
@@ -367,7 +370,7 @@ hhh(x):
     h(h(h(x)))
 ```
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 hhh(x):
     a = h(x)
@@ -383,7 +386,7 @@ kernel(x, y):
     f(x - y) * h(x)
 ```
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 kernel(x, y):
     a = x - y

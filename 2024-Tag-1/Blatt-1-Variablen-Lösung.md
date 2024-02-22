@@ -24,6 +24,7 @@
 `1 + 2 * (3 + 100 / (40 - 6 * 5) + 2) + (7 * 12) / 6 - 14`
 
 Lösung:
+
 `1 + 2 * (3 + 100 / (40 - 6 * 5) + 2) + (7 * 12) / 6 - 14`
 
 `1 + 2 * (3 + 100 / (40 - 30) + 2) + (7 * 12) / 6 - 14`
@@ -53,6 +54,7 @@ Lösung:
 `(99 - 55 + 33 * 2) / 2 + 5 * 12`
 
 Lösung:
+
 `(99 - 55 + 33 * 2) / 2 + 5 * 12`
 
 `(44 + 33 * 2) / 2 + 5 * 12`
@@ -71,7 +73,7 @@ Lösung:
 # Weitere Regeln:
 - Rechnungen dürfen ab jetzt nicht mehr tatsächlich ausgeführt werden, 
   dem Ergebnis wird stattdessen ein Name gegeben, 
-  welcher an Stelle der Uhrsprünglichen Rechung eingesetzt wird.
+  welcher an Stelle der ursprünglichen Rechung eingesetzt wird.
 - die "ausgeführte" Rechung kriegt eine eigene Zeile
 - Es muss nicht jedes Mal alles neu aufgeschrieben werden wie im Beispiel, 
   man darf auch den Originalausdruck ändern.
@@ -106,7 +108,7 @@ c
 1 + 2 * (3 + 100 / (40 - 6 * 5) + 2) + (7 * 12) / 6 - 14
 ```
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = 6 * 5
 b = 40 - a
@@ -128,7 +130,7 @@ k
 (99 - 55 + 33 * 2) / 2 + 5 * 12
 ```
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = 99 - 55
 b = 33 * 2
@@ -150,7 +152,7 @@ f
 2 * blub + 36 * x * x * x - 14 * x * x + 333 * x - 13 * blub
 ```
 
-Lösung (kompakt aufgeschrieben):
+Lösung (ohne Rechenweg):
 ```
 a = 2 * blub
 b = 36 * x
