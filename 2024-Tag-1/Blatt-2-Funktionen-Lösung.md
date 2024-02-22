@@ -147,7 +147,7 @@ Lösung:
 # Weitere Regeln:
 - Rechnungen dürfen ab jetzt nicht mehr tatsächlich ausgeführt werden, 
   dem Ergebnis wird stattdessen ein Name gegeben, 
-  welcher an Stelle der Uhrsprünglichen Rechung eingesetzt wird.
+  welcher an Stelle der ursprünglichen Rechung eingesetzt wird.
 - die "ausgeführte" Rechung kriegt eine eigene Zeile
 - Es muss nicht jedes Mal alles neu aufgeschrieben werden wie im Beispiel, 
   man darf auch den Originalausdruck ändern.
