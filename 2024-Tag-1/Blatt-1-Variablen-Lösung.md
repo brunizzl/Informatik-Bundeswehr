@@ -1,13 +1,13 @@
 
 # Regeln
-- Jede neue Zeile darf nur eine der Grundrechenarten ausgeführt werden
+- In jeder neuen Zeile darf nur eine Rechnung ausgeführt werden
     - zwei Zahlen addieren (`+`)
     - zwei Zahlen subtrahieren (`-`)
     - zwei Zahlen multiplizieren (`*`)
     - zwei Zahlen dividieren (`/`)
 - Zum Schluss muss der Ausdruck zu einer Zahl vereinfacht sein
 - Zuerst werden Klammern, dann mal / geteilt, dann plus / minus ausgewertet
-- Wenn zwei Vereinfachungen vorgenommen werden könnten, hat die linke Vorrang
+- Wenn zwei Vereinfachungen vorgenommen werden könnten, hat die Linke Vorrang
 
 
 ## Beispiel:
@@ -51,7 +51,7 @@ Lösung:
 `115`
 
 
-# Neue Regeln:
+# Weitere Regeln:
 - Rechnungen dürfen ab jetzt nicht mehr tatsächlich ausgeführt werden, 
   dem Ergebnis wird stattdessen ein Name gegeben, 
   welcher an Stelle der Uhrsprünglichen Rechung eingesetzt wird.
@@ -123,9 +123,9 @@ f
 ```
 
 
-# Neue Regeln:
+# Weitere Regeln:
 - Es können jetzt auch unbekannte Variablen auftreten (etwa `x`).
-  Diese werden exakt gleich behandelt, als wären ihre Werte bekannt.
+  Diese werden exakt gleich behandelt, als wären sie Ergebnis einer von uns aufgeschriebenen Rechnung.
 
 
 ## Aufgabe 5
