@@ -31,3 +31,10 @@ def fakultaet(n: int) -> int:
 
 
 print(fakultaet(100))
+
+
+
+
+
+
+
