@@ -1,8 +1,7 @@
 
 ## Das Dezimalsystem
 
-Das Dezimalsystem ist unser normales Zahlensystem. Hier gibt es die Ziffern $0, 1, 2, \dots, 8, 9$. Das sind zehn verschiedene, deswegen auch der Name Zehnersystem. Um die Basis eindeutig zu machen, schreiben wir dec als Index an eine Zahl, wenn sie im Dezimalsystem steht. Etwa schreiben wir einhundertsiebenundfünfzig als 
-$$157_{dec}$$
+Das Dezimalsystem ist unser normales Zahlensystem. Hier gibt es die Ziffern $0, 1, 2, \dots, 8, 9$. Das sind zehn verschiedene, deswegen auch der Name Zehnersystem. Um die Basis eindeutig zu machen, schreiben wir $`_{dec}`$ als Index an eine Zahl, wenn sie im Dezimalsystem steht. Etwa schreiben wir einhundertsiebenundfünfzig als $`157_{dec}`$.
 
 Die Folge der drei Ziffern $1$, $5$ und $7$ wird als Zahl wiefolgt interpretiert:
 $$157_{dec} = 1 \cdot 10^2 + 5 \cdot 10^1 + 7 \cdot 10^0$$
@@ -51,7 +50,7 @@ $$101010_{bin}
 
 Das ist deutlich kleiner als $101010_{dec}$.
 Dem Computer würde diese Rechnung nicht helfen. Dort wird $32_{dec}$ als $100000_{bin}$ gespeichert. 
-Der Ausdruck $(32 + 8 + 2)_{dec}$ also als $(100000 + 1000 + 10)_{bin}$. Wir laufen im Kreis, denn die Summe ist natürlich wieder $101010_{bin}$.
+Der Ausdruck $`(32 + 8 + 2)_{dec}`$ also als $`(100000 + 1000 + 10)_{bin}`$. Wir laufen im Kreis, denn die Summe ist natürlich wieder $`101010_{bin}`$.
 
 ## Basisumrechnung
 
