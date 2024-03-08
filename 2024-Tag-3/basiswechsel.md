@@ -67,8 +67,7 @@ $= 2 \cdot (2 \cdot (2 \cdot (2 \cdot (2 \cdot 1 + 1) + 0) + 1) + 1) + 1$
 
 Mit ein bisschen Umgruppieren erhalten wir
 $$
-55_{dec} = 2^5 \cdot 1 + 2^4 \cdot 1 + 2^3 \cdot 0 + 2^2 \cdot 1 + 2^1 \cdot 1 + 2^0 \cdot 1
-= 110111_{bin}
+55_{dec} = 2^5 \cdot 1 + 2^4 \cdot 1 + 2^3 \cdot 0 + 2^2 \cdot 1 + 2^1 \cdot 1 + 2^0 \cdot 1 = 110111_{bin}
 $$
 
 Die Rückrichtung ist konzeptionell nicht anders, nur für uns etwas mühsamer. Während durch zwei teilen für uns im Zehnersystem einfach war, ist durch 10 teilen im Binärsystem etwas anstrengender. 
