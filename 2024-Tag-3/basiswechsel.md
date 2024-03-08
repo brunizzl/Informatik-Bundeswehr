@@ -26,15 +26,19 @@ In diesem System geschriebene Zahlen nennen wir Binärzahlen. Zur Erkennung schr
 Zum Beispiel ist $101010_{bin}$ eine Binärzahl, $101010_{dec}$ dagegen ist eine Dezimalzahl die zufällig nur die Ziffern $0$ und $1$ enthält.
 
 Die Zahlenwert von $101010_{bin}$ ist 
+
 $$
 101010_{bin} = 1 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0
 $$
 
 Allgemein hat eine Zahl mit den $n + 1$ Binärziffern $b_{n}, b_{n - 1}, \dots, b_{2}, b_1, b_0$ also den Wert
+
 $$
 2^n \cdot b_n + 2^{n - 1} \cdot b_{n - 1} + \dots + 2^2 \cdot b_2 + 2^1 \cdot b_1 + 2^0 \cdot b_0
 $$
+
 oder äquivalent
+
 $$
 \sum_{k = 0}^n 2^k \cdot b_k
 $$
