@@ -31,9 +31,46 @@ def sterne_im_dreieck(m: int):
         m = m - 1
     return
 
+#Aufgabe 6
+def betrag(x: int) -> int:
+    if x < 0:
+        return -x
+    else:    
+        return x
 
+def max(x: int, y: int) -> int:
+    if x > y:
+        return x
+    else:    
+        return y
 
-
+def zahlenquadrate(n: int):
+    y = -n
+    while y <= n:
+        x = -n
+        while x <= n:
+            print(max(betrag(x), betrag(y)), end = " ")
+            x = x + 1
+            
+        print()
+        y = y + 1
+        
+#Aufgabe 7
+def zahlenrauten(n: int):
+    y = -n
+    while y <= n:
+        x = -n
+        while x <= n:
+            ziffer = betrag(x) + betrag(y)
+            if ziffer <= n:
+                print(ziffer, end = " ")
+            else:
+                print(" ", end = " ")
+            x = x + 1
+            
+        print()
+        y = y + 1
+    
 
 
 
