@@ -8,9 +8,16 @@ Die Folge der drei Ziffern $1$, $5$ und $7$ wird als Zahl wiefolgt interpretiert
 $$157_{dec} = 1 \cdot 10^2 + 5 \cdot 10^1 + 7 \cdot 10^0$$
 Die Position der einzelnen Ziffer ist dabei ausschlaggebend, mit welcher Zehnerpotenz sie multipliziert wird. Die letzte Stelle mit $10^0$, die vorletzte mit $10^1$, die vor-vorletzte mit $10^2$ und so weiter.
 Allgemein, wenn eine Zahl im Dezimalsystem die $n + 1$ Ziffern $d_n, d_{n-1}, \dots, d_2, d_1, d_0$ hat, wird ihr Wert berechnet als
-$$10^n \cdot d_n + 10^{n - 1} \cdot d_{n - 1} + \dots + 10^2 \cdot d_2 + 10^1 \cdot d_1 + 10^0 \cdot d_0$$
+
+$$
+10^n \cdot d_n + 10^{n - 1} \cdot d_{n - 1} + \dots + 10^2 \cdot d_2 + 10^1 \cdot d_1 + 10^0 \cdot d_0
+$$
+
 oder äquivalent
-$$\sum_{k = 0}^n 10^k \cdot d_k$$
+
+$$
+\sum_{k = 0}^n 10^k \cdot d_k
+$$
 
 ## Das Binärsystem
 
@@ -20,12 +27,13 @@ Zum Beispiel ist $101010_{bin}$ eine Binärzahl, $101010_{dec}$ dagegen ist eine
 
 Die Zahlenwert von $101010_{bin}$ ist 
 $$
-101010_{bin} =
-1 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0
+101010_{bin} = 1 \cdot 2^5 + 0 \cdot 2^4 + 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 0 \cdot 2^0
 $$
 
 Allgemein hat eine Zahl mit den $n + 1$ Binärziffern $b_{n}, b_{n - 1}, \dots, b_{2}, b_1, b_0$ also den Wert
-$$2^n \cdot b_n + 2^{n - 1} \cdot b_{n - 1} + \dots + 2^2 \cdot b_2 + 2^1 \cdot b_1 + 2^0 \cdot b_0$$
+$$
+2^n \cdot b_n + 2^{n - 1} \cdot b_{n - 1} + \dots + 2^2 \cdot b_2 + 2^1 \cdot b_1 + 2^0 \cdot b_0
+$$
 oder äquivalent
 $$
 \sum_{k = 0}^n 2^k \cdot b_k
