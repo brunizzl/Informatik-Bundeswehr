@@ -45,21 +45,29 @@ Der Ausdruck $(32 + 8 + 2)_{dec}$ also als $(100000 + 1000 + 10)_{bin}$. Wir lau
 Beginnen wir damit eine Dezimalzahl in Binär zu schreiben. 
 Wir müssen eigentlich nicht mehr tun als wiederholt (gegebenenfalls) minus 1 und geteilt durch 2 zu rechnen.
 
-$$
-55_{dec} = 54 + 1\\
-= 2 \cdot 27 + 1\\
-= 2 \cdot (26 + 1) + 1\\
-= 2 \cdot (2 \cdot 13 + 1) + 1\\
-= 2 \cdot (2 \cdot (12 + 1) + 1) + 1\\
-= 2 \cdot (2 \cdot (2 \cdot 6 + 1) + 1) + 1\\
-= 2 \cdot (2 \cdot (2 \cdot (6 + 0) + 1) + 1) + 1\\
-= 2 \cdot (2 \cdot (2 \cdot (2 \cdot 3 + 0) + 1) + 1) + 1\\
-= 2 \cdot (2 \cdot (2 \cdot (2 \cdot (2 + 1) + 0) + 1) + 1) + 1\\
-= 2 \cdot (2 \cdot (2 \cdot (2 \cdot (2 \cdot 1 + 1) + 0) + 1) + 1) + 1\\
-$$
+$55_{dec} = 54 + 1$
+
+$= 2 \cdot 27 + 1$
+
+$= 2 \cdot (26 + 1) + 1$
+
+$= 2 \cdot (2 \cdot 13 + 1) + 1$
+
+$= 2 \cdot (2 \cdot (12 + 1) + 1) + 1$
+
+$= 2 \cdot (2 \cdot (2 \cdot 6 + 1) + 1) + 1$
+
+$= 2 \cdot (2 \cdot (2 \cdot (6 + 0) + 1) + 1) + 1$
+
+$= 2 \cdot (2 \cdot (2 \cdot (2 \cdot 3 + 0) + 1) + 1) + 1$
+
+$= 2 \cdot (2 \cdot (2 \cdot (2 \cdot (2 + 1) + 0) + 1) + 1) + 1$
+
+$= 2 \cdot (2 \cdot (2 \cdot (2 \cdot (2 \cdot 1 + 1) + 0) + 1) + 1) + 1$
+
 Mit ein bisschen Umgruppieren erhalten wir
 $$
-55_{dec} = 2^5 \cdot 1 + 2^4 \cdot 1 + 2^3 \cdot 0 + 2^2 \cdot 1 + 2^1 \cdot 1 + 2^0 \cdot 1\\
+55_{dec} = 2^5 \cdot 1 + 2^4 \cdot 1 + 2^3 \cdot 0 + 2^2 \cdot 1 + 2^1 \cdot 1 + 2^0 \cdot 1
 = 110111_{bin}
 $$
 
@@ -69,6 +77,12 @@ Bevor wir darüber sprechen wie man im Binärsystem rechnet, ist es am einfachst
 1. Wir beginnen mit einer Zahl `n` im Binärsystem.
 2. Die nächstwichtige Stelle im Dezimalsystem (beginnend mit der unwichtigsten) hat die Ziffer `n % 10`, wobei `%` "Teile und nehme den Rest" bedeutet.
 3. Überschreibe `n` mit `n // 10`, wobei `//` "Teile und runde ab" bedeutet.
+4. Wenn `n` nicht `0` ist springe zurück zu Schritt 2.
+
+Die Binärziffern einer Zahl zu berechnen funktioniert auf dem selben Weg:
+1. Wir beginnen mit einer Zahl `n`.
+2. Die nächstwichtige Stelle im Binärsystem (beginnend mit der unwichtigsten) hat die Ziffer `n % 2`, wobei `%` "Teile und nehme den Rest" bedeutet.
+3. Überschreibe `n` mit `n // 2`, wobei `//` "Teile und runde ab" bedeutet.
 4. Wenn `n` nicht `0` ist springe zurück zu Schritt 2.
 
 ## Addition
