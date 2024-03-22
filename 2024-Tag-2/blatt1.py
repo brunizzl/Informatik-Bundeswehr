@@ -3,7 +3,8 @@ def mal_3(x: int) -> int:
 
 print("test:")
 print(mal_3(2))
-print(mal_3(3))
+print(mal_3(3))
+
 
 
 #Aufgabe 2
