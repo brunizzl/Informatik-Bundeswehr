@@ -105,6 +105,40 @@ print("Test Aufgabe 8:")
 print("64 in dezimal ist ", int_zu_dezimal(64))
 print("50 in dezimal ist ", int_zu_dezimal(50))
 
+#Aufgabe 9
+def float_epsilon() -> float:
+    eps = 1.0
+    while 1.0 + eps != 1.0:
+        eps = eps / 2
+    
+    return eps * 2
+
+print()
+print("Test Aufgabe 9:")
+print("1 +   ε   == 1: ", 1 + float_epsilon() == 1)
+print("1 + ε / 2 == 1: ", 1 + float_epsilon() / 2 == 1)
+
+#Aufgabe 10
+def euler() -> float:
+    summe = 0.0
+    summe_alt = -1.0 #wert egal, hauptsache nicht 0.0
+    
+    k = 0
+    k_fakultaet = 1.0
+    while summe_alt != summe:
+        summe_alt = summe
+        summe = summe + 1.0 / k_fakultaet
+        k = k + 1
+        k_fakultaet = k_fakultaet * k
+    
+    return summe
+
+print()
+print("Test Aufgabe 10:")
+print("e = ", euler())
+
+
+
 
 
 
