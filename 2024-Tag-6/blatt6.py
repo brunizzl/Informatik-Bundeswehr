@@ -83,13 +83,15 @@ def liste_umdrehen(l: list):
 
 #Aufgabe 5
 def sortiert(l: list[int]):
-    #anmerkung: range(0, blub) kann auch range(blub) 
-    #geschrieben werden.
-    for _ in range(0, len(l)):
-        for i1 in range(0, len(l) - 1):
-            i2 = i1 + 1
+    #anmerkung: range(blub) ist identisch zu range(0, blub) 
+    for _ in range(len(l)):
+        i1 = 0
+        i2 = 1
+        while i2 < len(l):
             if l[i1] > l[i2]:
                 tausche(l, i1, i2)
+            i1 += 1
+            i2 += 1
 
 
 
