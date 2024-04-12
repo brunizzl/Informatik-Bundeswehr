@@ -45,14 +45,16 @@ def zahl_als_str_10(n: int) -> str:
         
     return erg
 
-def laengerer(a: str, b: str) -> str:
+def laengerer(a: str, b: str) -> str:
+
     if len(a) < len(b):
         return b
     else:
         return a
 
 
-def float_zu_str(x: float) -> str:
+def float_zu_str(x: float) -> str:
+
     if x < 0:
         vorz = "- "
     else:
