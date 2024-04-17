@@ -82,7 +82,7 @@ def liste_umdrehen(l: list):
         i2 -= 1
 
 #Aufgabe 5
-def sortiert(l: list[int]):
+def sortiere(l: list[int]):
     #anmerkung: range(blub) ist identisch zu range(0, blub) 
     for _ in range(len(l)):
         i1 = 0
