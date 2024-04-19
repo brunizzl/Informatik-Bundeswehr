@@ -45,19 +45,40 @@ def plus_1(zahl: list[int]) -> list[int]:
         i += 1
     return erg + [1]
 
-def range_liste(start: int, stop: int) -> list[int]:
-    erg = [0] * (stop - start)
-    i = 0
-    while i < len(erg):
-        erg[i] = start
-        start += 1
-        i += 1
+def range_liste_impl(start: int, stop: int, schritt: int) -> list[int]:
+    erg = []
+
+    if schritt < 0:
+        while start > stop:
+            erg.append(start)
+            start += schritt        
+    elif schritt > 0:
+        while start < stop:
+            #erg = erg + [start]
+            #erg += [start]
+            erg.append(start)
+            start += schritt
 
     return erg
+
+def range_liste(a: int, b: int = None, c: int = None) -> list[int]:
+    if b == None:
+        return range_liste_impl(0, a, 1)
+    elif c == None:
+        return range_liste_impl(a, b, 1)
+    else:
+        return range_liste_impl(a, b, c)
 
 for x in range_liste(2, -10):
     print(x)
 print("fertig!")
+
+
+
+
+
+
+
 
 
 
