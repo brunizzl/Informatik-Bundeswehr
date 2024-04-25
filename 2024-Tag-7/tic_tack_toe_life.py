@@ -9,13 +9,14 @@ def baue_spielfeld() -> list[str]:
 
     return spielfeld
 
-def zeige_spielfeld(feld: list[str]):
-    #print(feld[0:3])
-    #print(feld[3:6])
-    #print(feld[6:9])
-    print(feld[0], feld[1], feld[2], "    1 2 3")
-    print(feld[3], feld[4], feld[5], "    4 5 6")
-    print(feld[6], feld[7], feld[8], "    7 8 9")
+def zeige_spielfeld(feld: list[str]):
+
+    print(feld[0:3])
+    print(feld[3:6])
+    print(feld[6:9])
+    #print(feld[0], feld[1], feld[2], "    1 2 3")
+    #print(feld[3], feld[4], feld[5], "    4 5 6")
+    #print(feld[6], feld[7], feld[8], "    7 8 9")
 
 def naechster_zug(feld: list[str]) -> int:
     while True:
@@ -37,7 +38,7 @@ def naechster_zug(feld: list[str]) -> int:
 #Alternative Implementierung in tic_tac_toe_loesung.py
 def gewonnen(feld: list[str], spieler: str) -> bool:
     #Zeilen
-    if feld[0] == spieler and feld[1] == spieler and feld[2] == spieler:
+    if feld[0] == feld[1] == feld[2] == spieler:
         return True
     if feld[3] == spieler and feld[4] == spieler and feld[5] == spieler:
         return True
