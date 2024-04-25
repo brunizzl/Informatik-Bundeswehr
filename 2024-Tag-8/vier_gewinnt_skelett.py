@@ -7,6 +7,7 @@ def baue_spielfeld(breite: int, hoehe: int) -> list[list[str]]:
 
 def zeige_spielfeld(feld: list[list[str]]):
     # gehe zeilenweise durch das feld und eintraegeweise durch jede zeile
+    # tipp: print("Hallo", end = "") gibt Hallo auf der Konsole aus ohne Zeilenumbruch danach.
     # bonus: gebe als extrazeile die spaltennummern aus
     pass
 
