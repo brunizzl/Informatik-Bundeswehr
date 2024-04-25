@@ -5,11 +5,21 @@ def baue_spielfeld() -> list[str]:
 
 
 def baue_metaspielfeld() -> list[list[str]]:
-    #1. erzeuge eine neue variable "feld", initialisiert mit der leeren liste    
-    #2. hänge an "feld" in einer schleife neun mal ein normales spielfeld dran    
+    # diese variante funktioniert nicht, weil alle eintraege der resultierenden
+    # liste tatsaechlich nicht nur vom wert, sondern auch vom speicherort identisch sind.
+    # (alle eintraege haben die selbe adresse, es gibt also nur EIN kleines spielfeld,
+    # auf das 9x in der gebauten liste verwiesen ist.)
+    #return [baue_spielfeld()] * 9
+
+    #1. erzeuge eine neue variable "feld", initialisiert mit der leeren liste
+    feld = []
+    #2. hänge an "feld" in einer schleife neun mal ein normales spielfeld dran
+    for _ in range(0, 9):
+        feld.append(baue_spielfeld())
+        
     #3. gebe die fertige liste "feld" aus der funktion zurück
+    return feld
     
-    pass # <- kann geloescht werden
 
 def zeige_score(score: list[str]):
     print()
@@ -66,7 +76,7 @@ def gewonnen(feld: list[str], spieler: str) -> bool:
 def spielen():
     score = baue_spielfeld()
     meta = baue_metaspielfeld()
-    block = None
+    block = None # None ist spezialfall, sonst ist "block" der letzte zug (int von 0 bis inklusive 8)
     while True:
         for spieler in ["X", "O"]:
             # zeige metaspielfeld auf konsole
