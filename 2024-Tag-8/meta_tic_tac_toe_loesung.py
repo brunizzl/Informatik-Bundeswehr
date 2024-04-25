@@ -79,18 +79,16 @@ def spielen():
              
             if gewonnen(meta[block], spieler):
                 score[block] = spieler
-                block = None
                 if gewonnen(score, spieler):      
                     print("Spieler", spieler, "hat gewonnen!")
                     return    
             elif not "_" in meta[block]:
                 score[block] = "~"
-                block = None
                 if not "_" in score:
                     print("Unentschieden!")
                     return
-            else:
-                block = i
+            
+            block = i
 
 
 

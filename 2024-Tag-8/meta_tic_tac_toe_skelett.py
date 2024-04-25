@@ -81,18 +81,16 @@ def spielen():
             
             # wenn der spieler das normale feld an index "block" in "meta" gewonnen hat:
                 # setze in "score" an index "block" auf "spieler"
-                # setze "block" auf "None"
                 # wenn spieler das gesamte spiel gewonnen hat:
                     # gratuliere dem sieger auf der konsole
                     # beende die aktuelle funktion 
             # sonst wenn kein unterstrich mehr in "meta" an index "block" ist:
                 # setze "score" an index "block" auf tilde
-                # setze "block" auf "None"
                 # wenn es keine unterstriche mehr in "score" gibt:
                     # konsolenausgabe dass es unenschieden ist
                     # beende die aktuelle funktion 
-            # sonst:
-                # setze "block" gleich "i"
+            
+            # setze "block" gleich "i"
             
             pass # <- kann geloescht werden
                 
