@@ -35,45 +35,32 @@ def zeige_spielfeld(spielfeld: list[list[int]]):
         print("|")
     print_linie()
     
-def gueltig(spielfeld: list[list[int]]) -> bool:
-    # teste Zeilen
-    for zeile in spielfeld:
-        for zahl in range(1, 10):
-            vorkommen = 0
-            for eintrag in zeile:
-                if eintrag == zahl:
-                    vorkommen += 1
-            if vorkommen > 1:
-                return False
+
+def gueltig_um(spielfeld: list[list[int]], zeile_nr: int, spalte_nr: int) -> bool:
+    eintrag = spielfeld[zeile_nr][spalte_nr]
+    
+    # teste zeile
+    for i in range(9):
+        if spielfeld[zeile_nr][i] == eintrag and i != spalte_nr:
+            return False
+    
+    # teste spalte
+    for i in range(9):
+        if spielfeld[i][spalte_nr] == eintrag and i != zeile_nr:
+            return False
                 
-    #teste spalten
-    for spalte_nr in range(9):
-        for zahl in range(1, 10):
-            vorkommen = 0
-            for zeile_nr in range(9):
-                eintrag = spielfeld[zeile_nr][spalte_nr]
-                if eintrag == zahl:
-                    vorkommen += 1
-            if vorkommen > 1:
+    #teste block
+    block_zeile_start = zeile_nr - (zeile_nr % 3)
+    block_spalte_start = spalte_nr - (spalte_nr % 3)
+    for zeile_delta in range(3):
+        for spalte_delta in range(3):
+            z = block_zeile_start + zeile_delta
+            s = block_spalte_start + spalte_delta
+            if spielfeld[z][s] == eintrag and (z != zeile_nr or s != spalte_nr):
                 return False
-                
-    #teste bloecke
-    for block_zeile_nr in range(3):
-        for block_spalte_nr in range(3):
-            for zahl in range(1, 10):
-                vorkommen = 0
-                for zeile_delta in range(3):
-                    for spalte_delta in range(3):
-                        zeile_nr = 3 * block_zeile_nr + zeile_delta
-                        spalte_nr = 3 * block_spalte_nr + spalte_delta
-                        eintrag = spielfeld[zeile_nr][spalte_nr]
-                        if eintrag == zahl:
-                            vorkommen += 1
-                if vorkommen > 1:
-                    return False
     
     return True
-    
+
 
 def int_eingabe(msg: str, min: int, max: int) -> int:
     while True:
@@ -98,7 +85,7 @@ def naechster_zug(spielfeld: list[list[int]]):
         else:
             eintrag = int_eingabe("Wert: ", 1, 9)
             spielfeld[zeile_nr][spalte_nr] = eintrag
-            if gueltig(spielfeld):
+            if gueltig_um(spielfeld, zeile_nr, spalte_nr):
                 return            
             print("Illegal :(")    
             spielfeld[zeile_nr][spalte_nr] = 0
