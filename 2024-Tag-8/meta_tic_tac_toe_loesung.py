@@ -90,6 +90,25 @@ def spielen():
             
             block = i
 
+if __name__ == "__main__":
+    spielen()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     
