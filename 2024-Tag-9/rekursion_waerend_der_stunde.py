@@ -45,7 +45,26 @@ def fibonacci_2(n: int) -> int:
     diese = vorletzte + letzte
     return diese
 
+def fibonacci_3(n) -> list[int]:
+    if n == 0:
+        return [0]
+    if n == 1:
+        return [0, 1]
 
+    letzte_beide = fibonacci_3(n - 1)
+    diese = letzte_beide[0] + letzte_beide[1]
+    return [letzte_beide[1], diese]
+
+def fibonacci_4(n) -> (int, int):
+    if n == 0:
+        return (0, 0) #hiermit definieren wir die minus-erste fibonaccizahl als 0.
+    if n == 1:
+        return (0, 1)
+
+    letzte_beide = fibonacci_4(n - 1)
+    (vorletzte, letzte) = letzte_beide
+    diese = vorletzte + letzte
+    return (letzte, diese)
 
 
 
