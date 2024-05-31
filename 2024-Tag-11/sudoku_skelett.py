@@ -98,8 +98,11 @@ def naechster_zug(spielfeld: list[list[int]]):
 def fertig(spielfeld: list[list[int]]) -> bool:
     pass # <- kann gelöscht werden
     
-    # wenn an irgend einer stelle in "spielfeld" der wert 0 steht, gebe "False" zurück.
-    # sonst: gebe "True" zurück
+    # für jede zeile:
+    #     für jeden eintrag der zeile:
+    #         wenn der eintrag gleich 0 ist:
+    #             gebe "False" zurück
+    # sonst nachdem jeder eintrag getestet wurde gebe "True" zurück
     
 def spielen():
     pass # <- kann gelöscht werden
