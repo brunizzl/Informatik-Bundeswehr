@@ -87,7 +87,7 @@ haeufiger_name_in_lebensdekade = [
     "Ingeborg",
 ]
 
-# bonus für Aufgabe 6:
+# bonus für Aufgabe 4:
 def haeufiger_name_in_alter_variante_2(alter: int) -> str:
     dekade = alter // 10
     if dekade < len(haeufiger_name_in_lebensdekade):

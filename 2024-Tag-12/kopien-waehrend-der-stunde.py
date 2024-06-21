@@ -1,7 +1,7 @@
 
 import copy
 
-version = 0 # <- zahl ändern für anderen fall
+version = 1 # <- zahl ändern für anderen fall
 
 if version == 1:
     x = 2
