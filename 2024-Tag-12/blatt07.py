@@ -41,9 +41,9 @@ def quadrat_taschenrechner():
                 print("Zahl zu groß :(")
             else:
                 ## teil a):
-                quadrat = quadrat_fun(x)
+                #quadrat = quadrat_fun(x)
                 ## teil b):
-                #quadrat = quadrat_liste[x]
+                quadrat = quadrat_liste[x]
                 print(quadrat)
 
 
