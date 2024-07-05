@@ -34,7 +34,7 @@ def bubblesort_variante_marcel(liste: list[int]) -> list[int]:
     for _ in range(len(liste)):
         kleinster = liste[0]
         i_kleinster = 0
-        for i in range(1, len(liste) - 1):
+        for i in range(1, len(liste)):
             if liste[i] < kleinster:
                 kleinster = liste[i]
                 i_kleinster = i
