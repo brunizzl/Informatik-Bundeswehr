@@ -55,6 +55,43 @@ def insertionsort(liste: list[int]) -> list[int]:
         
     return ergebnis
 
-
+# Aufgabe 5
+def mergesort(liste: list[int]) -> list[int]:
+    # Schritt 1
+    if len(liste) <= 1:
+        return liste
+    
+    # Schritt 2
+    mitte = len(liste) // 2
+    haelfte_1 = liste[:mitte]
+    haelfte_2 = liste[mitte:]
+    
+    # Schritt 3
+    sortiert_1 = mergesort(haelfte_1)
+    sortiert_2 = mergesort(haelfte_2)
+    
+    # Schritt 4
+    ergebnis = []
+    
+    # Schritt 5
+    i1 = 0
+    i2 = 0
+    while i1 < len(sortiert_1) and i2 < len(sortiert_2):
+        if sortiert_1[i1] <= sortiert_2[i2]:
+            ergebnis.append(sortiert_1[i1])
+            i1 += 1
+        else:
+            ergebnis.append(sortiert_2[i2])
+            i2 += 1
+            
+    ergebnis += sortiert_1[i1:]
+    ergebnis += sortiert_2[i2:]
+    
+    # Schritt 6
+    return ergebnis
+    
+    
+    
+    
 
 
