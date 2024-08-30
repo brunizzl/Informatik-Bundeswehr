@@ -74,4 +74,7 @@ plt.plot(laengen, merge_zeiten, "b")
 plt.xlabel("Länge")
 plt.ylabel("Zeit [s]")
 plt.legend(["bubblesort","mergesort"], loc = "best")
-plt.show()
+
+plt.show()                         # bitte nur eine zeile zur zeit aktiv lassen
+#plt.savefig("bubble-vs-merge.png") # bitte nur eine zeile zur zeit aktiv lassen
+
