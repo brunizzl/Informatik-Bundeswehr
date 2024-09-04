@@ -42,8 +42,8 @@ for n in range(20, 45):
     laengen.append(laenge)
     x2 = x1.copy()
     
-    # sortiere eine ausfuerung der generierten liste mut bubblesort
-    # und messe wie lange es dauert bis bubblesort fertig ist
+    # sortiere eine ausfuerung der generierten liste mit bubblesort
+    # und messe, wie lange es dauert bis bubblesort fertig ist.
     print("bubblesort...")
     bubble_start = time.perf_counter()
     sort.bubblesort(x1)
@@ -53,8 +53,8 @@ for n in range(20, 45):
     print("fertig:", x1[:5], "...", x1[(laenge - 5):], 
         "in", bubble_zeit, "sekunden")
     
-    # sortiere eine ausfuerung der generierten liste mut mergesort
-    # und messe wie lange es dauert bis mergesort fertig ist
+    # sortiere eine ausfuerung der generierten liste mit mergesort
+    # und messe, wie lange es dauert bis mergesort fertig ist.
     print("mergesort...")
     merge_start = time.perf_counter()
     x3 = sort.mergesort(x2)
