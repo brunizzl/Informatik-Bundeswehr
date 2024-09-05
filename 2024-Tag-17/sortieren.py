@@ -1,11 +1,10 @@
 
 from collections.abc import Callable
 
-# fuer einen beliebigen typen T, ist "liste" eine liste von variablen vom typ T
-# und "kleiner" eine funktion, die sagt, ob das erste argument kleiner als das zweite argument ist.
+# "kleiner" ist eine funktion, die sagt, ob das erste argument kleiner als das zweite argument ist.
 # standartmaessig sollte also "kleiner(x, y)" das selbe ergebnis haben wie "x < y", 
 # sprich entweder "True" oder "False".
-def mergesort_mit[T](kleiner: Callable[[T, T], bool], liste: list[T]) -> list[T]:
+def mergesort_mit(kleiner: Callable[[int, int], bool], liste: list[int]) -> list[int]:
     # Schritt 1
     if len(liste) <= 1:
         return liste
@@ -40,13 +39,15 @@ def mergesort_mit[T](kleiner: Callable[[T, T], bool], liste: list[T]) -> list[T]
     return ergebnis
 
 
-def mergesort[T](liste: list[T]) -> list[T]:
-    def kleiner(x: T, y: T) -> bool:
+# sortiert normal in aufsteigender reihenfolge
+def mergesort(liste: list[int]) -> list[int]:
+    def kleiner(x: int, y: int) -> bool:
         return x < y
         
     return mergesort_mit(kleiner, liste)
 
-
+# nicht-negative zahlen sind aufsteigend sortiert, negative auch, 
+# aber negative zahlen werden nach hinten sortiert
 def plus_kleiner_minus(x: int, y: int) -> bool:
     if x < 0 and y < 0:
         return x < y
