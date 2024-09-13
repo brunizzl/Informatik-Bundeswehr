@@ -25,12 +25,12 @@ def mergesort_mit(kleiner: Callable[[int, int], bool], liste: list[int]) -> list
     i1 = 0
     i2 = 0
     while i1 < len(sortiert_1) and i2 < len(sortiert_2):
-        if kleiner(sortiert_1[i1], sortiert_2[i2]):
-            ergebnis.append(sortiert_1[i1])
-            i1 += 1
-        else:
+        if kleiner(sortiert_2[i2], sortiert_1[i1]):
             ergebnis.append(sortiert_2[i2])
             i2 += 1
+        else:
+            ergebnis.append(sortiert_1[i1])
+            i1 += 1
             
     ergebnis += sortiert_1[i1:]
     ergebnis += sortiert_2[i2:]
@@ -41,10 +41,10 @@ def mergesort_mit(kleiner: Callable[[int, int], bool], liste: list[int]) -> list
 
 # sortiert normal in aufsteigender reihenfolge
 def mergesort(liste: list[int]) -> list[int]:
-    def kleiner(x: int, y: int) -> bool:
+    def kleiner_normal(x: int, y: int) -> bool:
         return x < y
         
-    return mergesort_mit(kleiner, liste)
+    return mergesort_mit(kleiner_normal, liste)
 
 # nicht-negative zahlen sind aufsteigend sortiert, negative auch, 
 # aber negative zahlen werden nach hinten sortiert
