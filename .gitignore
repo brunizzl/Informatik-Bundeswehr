@@ -2,3 +2,5 @@
 *.exe
 
 2024-Tag-Unendlich/
+**/__pycache__/
+**/target/

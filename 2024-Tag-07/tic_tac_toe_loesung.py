@@ -47,7 +47,7 @@ def gewonnen(feld: list[str], spieler: str) -> bool:
 def spielen():
     feld = baue_spielfeld()
     while True:
-        for spieler in ["X", "O", "S"]:
+        for spieler in ["X", "O"]:
             zeige_spielfeld(feld)
             print("Spieler", spieler, "ist am Zug.")
             i = naechster_zug(feld)
@@ -60,7 +60,8 @@ def spielen():
                 print("Unentschieden!")
                 return
 
-
+if __name__ == "__main__":
+    spielen()
 
     
 

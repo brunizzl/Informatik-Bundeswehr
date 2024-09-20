@@ -33,7 +33,7 @@ laengen = []
 bubble_zeiten = []
 merge_zeiten = []
 
-for n in range(20, 45):
+for n in range(20, 80):
     laenge = int(1.2 ** n)
     print("n:", n, "laenge:", laenge)
     
@@ -44,14 +44,14 @@ for n in range(20, 45):
     
     # sortiere eine ausfuerung der generierten liste mit bubblesort
     # und messe, wie lange es dauert bis bubblesort fertig ist.
-    print("bubblesort...")
-    bubble_start = time.perf_counter()
-    sort.bubblesort(x1)
-    bubble_fertig = time.perf_counter()
-    bubble_zeit = bubble_fertig - bubble_start
-    bubble_zeiten.append(bubble_zeit)
-    print("fertig:", x1[:5], "...", x1[(laenge - 5):], 
-        "in", bubble_zeit, "sekunden")
+    #print("bubblesort...")
+    #bubble_start = time.perf_counter()
+    #sort.bubblesort(x1)
+    #bubble_fertig = time.perf_counter()
+    #bubble_zeit = bubble_fertig - bubble_start
+    #bubble_zeiten.append(bubble_zeit)
+    #print("fertig:", x1[:5], "...", x1[(laenge - 5):], 
+    #    "in", bubble_zeit, "sekunden")
     
     # sortiere eine ausfuerung der generierten liste mit mergesort
     # und messe, wie lange es dauert bis mergesort fertig ist.
@@ -69,11 +69,12 @@ for n in range(20, 45):
 # dieser part funktioniert nur, wenn matplotlib installiert ist.
 plt.figure()
 plt.grid()
-plt.plot(laengen, bubble_zeiten, "r")
+#plt.plot(laengen, bubble_zeiten, "r")
 plt.plot(laengen, merge_zeiten, "b")
 plt.xlabel("Länge")
 plt.ylabel("Zeit [s]")
-plt.legend(["bubblesort","mergesort"], loc = "best")
+#plt.legend(["bubblesort","mergesort"], loc = "best")
+plt.legend(["mergesort"], loc = "best")
 
 plt.show()                         # bitte nur eine zeile zur zeit aktiv lassen
 #plt.savefig("bubble-vs-merge.png") # bitte nur eine zeile zur zeit aktiv lassen
