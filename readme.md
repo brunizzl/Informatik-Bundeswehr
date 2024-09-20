@@ -7,6 +7,11 @@ Dateien zum Kurs
 - sehr ähnlicher Kurs in Buchform (kostenlos): https://automatetheboringstuff.com/
 - offizielle python Seite: https://www.python.org/
 - Online Compiler für sehr viele Sprachen (auch python und c++): https://godbolt.org/
+
+## Seiten für Latex / Typst:
+- Typst Version von Overleaf: https://typst.app/
+- Typst VS Code Plugin: https://github.com/Myriad-Dreamin/tinymist 
+- Latex Symbolerkennung: http://detexify.kirelabs.org/classify.html
     
 ## Nützliche Befehle
 - `python` startet python im Taschenrechnermodus
