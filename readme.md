@@ -12,6 +12,7 @@ Dateien zum Kurs
 - Typst Version von Overleaf: https://typst.app/
 - Typst VS Code Plugin: https://github.com/Myriad-Dreamin/tinymist 
 - Latex Symbolerkennung: http://detexify.kirelabs.org/classify.html
+- Code der Python Arbeitsblätter: https://de.overleaf.com/read/dxykkvbsvjtb#ec9b28
     
 ## Nützliche Befehle
 - `python` startet python im Taschenrechnermodus
